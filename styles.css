@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
 
 }
 
@@ -82,7 +82,7 @@
         border-radius: 50%;
         height: 250px;
         width: 211px;
-        border: 7px solid white;
+        border: 5px solid white;
     }
 
     #apresenta {
@@ -177,60 +177,41 @@
 }
 
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 70px;
+    /* display: flex; */
+    padding: 15px;
+    font-size: 25px;
+    width: 60px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 90%;
-}
-
-.fa-facebook {
     background: black;
     color: white;
+    transition: background 0.5s;
 }
-
 
 .fa-facebook:hover {
     background: #3b5998;
 }
 
-.fa-twitter {
-    background: black;
-    color: white;
-}
-
-
 .fa-twitter:hover {
     background: #55ACEE;
-}
-
-.fa-instagram {
-    background: black;
-    color: white;
 }
 
 .fa-instagram:hover {
     background: #c13584;
 }
 
-.fa-telegram {
-    background: black;
-    color: white;
-}
-
 .fa-telegram:hover {
     background: #0088cc;
 }
 
-.fa-whatsapp {
-    background: black;
-    color: white
-}
-
 .fa-whatsapp:hover {
     background: #25d366;
+}
+
+.fa-github:hover{
+    background: #6f42c1;
 }
 
 .gradient {
