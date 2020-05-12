@@ -3,11 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Fira Sans', sans-serif;
-
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
 
     .header {
         width: 100%;
@@ -55,23 +54,22 @@
         text-align: center;
     }
 
-}
+} */
 
 /* Desktop Styles */
 @media only screen and (min-width: 768px) {
     .page {
         width: auto;
         margin: 0 auto;
+        /* background-image: url(images/cool-background.svg);
+        background-size: cover; */
     }
 
     .header {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
-        height: 300px;
         width: inherit;
-        background-image: url(images/fundo_desk2.JPG);
-        background-size: cover;
     }
 
     #imagem {
@@ -82,19 +80,46 @@
         border-radius: 50%;
         height: 250px;
         width: 211px;
-        border: 5px solid white;
+        border: 5px solid #6f42c1;
     }
 
     #apresenta {
-        color: white;
+        color: #6f42c1;
         height: 90px;
         margin-top: 130px;
         text-align: center;
         background-size: 100%;
         font-weight: bold;
-        text-shadow: 3px 2px black;
         border-radius: 10%;
         font-size: 40px;
+    }
+
+    .top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navLista{
+        padding: 10px 0;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        background-color: #6f42c1;
+    }
+
+    a{
+        font-weight: bold;
+        color: #FFF;
+        height: fit-content;
+        margin: 10px;
+        text-decoration: none;
+        transition: color 0.5s;
+    }
+
+    a:hover{
+        color: #25d366;
     }
 
     .sobre {
@@ -143,13 +168,13 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: white;
+    /* background-color: white; */
     line-height: 1.5;
     border-bottom: 1px solid #C5CED5;
 }
 
 .estudos {
-    background-color: white;
+    /* background-color: white; */
     padding: 20px;
     line-height: 1.5;
     border-bottom: 1px solid #C5CED5;
@@ -167,12 +192,12 @@
 }
 
 .outros {
-    background-color: white;
+    /* background-color: white; */
     line-height: 1.5;
 }
 
 .redes {
-    background-color: white;
+    /* background-color: white; */
     line-height: 1.5;
 }
 
