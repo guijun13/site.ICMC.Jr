@@ -6,12 +6,70 @@
 }
 
 /* Mobile Styles */
-/* @media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 
-    .header {
-        width: 100%;
-        background-image: url(images/fundo_cel2.JPG);
+    header {
+        width: 100vw;
         background-size: cover;
+        height: 100vh;
+    }
+
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .navLista{
+        position: fixed;
+        top: 0;
+        width: 100vw;
+    }
+
+    .navLista ul{
+        padding: 10px 0;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        background-color: #6f42c1;
+        text-transform: uppercase;
+    }
+
+    .navLista a{
+        font-size: 14px;
+        font-weight: bold;
+        color: #FFF;
+        height: fit-content;
+        margin: 10px;
+        text-decoration: none;
+        transition: color 0.5s;
+        padding: 10px;
+    }
+
+    .navLista a:hover{
+        color: #25d366;
+    }
+
+    .top{
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .top h1 {
+        color: #6f42c1;
+        text-align: center;
+        background-size: 100%;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .top h2{
+        font-size: 16px;
     }
 
     .sobre,
@@ -22,30 +80,6 @@
         height: auto;
     }
 
-    .header {
-        background-color: white;
-        height: 590px;
-    }
-
-    #imagem {
-        display: block;
-        margin-bottom: 30px;
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        border: 7px solid white;
-
-    }
-
-    #apresenta {
-        text-align: center;
-        color: white;
-        margin-left: 60px;
-        margin-right: 60px;
-        text-shadow: 3px 2px black;
-    }
-
     .outros {
         padding: 20px;
     }
@@ -54,7 +88,7 @@
         text-align: center;
     }
 
-} */
+}
 
 /* Desktop Styles */
 @media only screen and (min-width: 768px) {
@@ -65,61 +99,59 @@
         background-size: cover; */
     }
 
-    .header {
+    header {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         width: inherit;
     }
 
-    #imagem {
-        display: block;
-        margin-bottom: 30px;
-        margin-top: 20px;
-        margin-left: 30px;
-        border-radius: 50%;
-        height: 250px;
-        width: 211px;
-        border: 5px solid #6f42c1;
-    }
-
-    #apresenta {
-        color: #6f42c1;
-        height: 90px;
-        margin-top: 130px;
-        text-align: center;
-        background-size: 100%;
-        font-weight: bold;
-        border-radius: 10%;
-        font-size: 40px;
-    }
-
-    .top{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
     .navLista{
+        position: fixed;
+        top: 0;
+        width: 100vw;
+    }
+
+    .navLista ul{
         padding: 10px 0;
         display: flex;
         flex-direction: row;
         list-style: none;
         justify-content: center;
         background-color: #6f42c1;
+        text-transform: uppercase;
     }
 
-    a{
+    .navLista a{
+        font-size: 18px;
         font-weight: bold;
         color: #FFF;
         height: fit-content;
         margin: 10px;
         text-decoration: none;
         transition: color 0.5s;
+        padding: 10px;
     }
 
-    a:hover{
+    .navLista a:hover{
         color: #25d366;
+    }
+
+    .top{
+        margin-top: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .topText h1 {
+        color: #6f42c1;
+        text-align: center;
+        background-size: 100%;
+        font-weight: bold;
+        font-size: 2em;
     }
 
     .sobre {
