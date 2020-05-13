@@ -146,6 +146,10 @@
         align-items: center;
     }
 
+    .top img{
+        border-radius: 50%;
+    }
+
     .topText h1 {
         color: #6f42c1;
         text-align: center;
