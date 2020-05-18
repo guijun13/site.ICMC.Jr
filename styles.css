@@ -95,8 +95,7 @@
     .page {
         width: auto;
         margin: 0 auto;
-        /* background-image: url(images/cool-background.svg);
-        background-size: cover; */
+        /* background-size: cover; */
     }
 
     header {
@@ -106,20 +105,23 @@
         width: inherit;
     }
 
-    .navLista{
+    .container{
         position: fixed;
         top: 0;
         width: 100vw;
+        background-color: #6f42c1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 30px;
     }
 
     .navLista ul{
-        padding: 10px 0;
         display: flex;
-        flex-direction: row;
         list-style: none;
-        justify-content: center;
-        background-color: #6f42c1;
+        justify-content: flex-end;
         text-transform: uppercase;
+        align-items: center;
     }
 
     .navLista a{
@@ -130,11 +132,16 @@
         margin: 10px;
         text-decoration: none;
         transition: color 0.5s;
-        padding: 10px;
+        padding: fit-content;
     }
 
     .navLista a:hover{
         color: #25d366;
+    }
+
+    .navLista img{
+        align-content: left;
+        margin: 10px;
     }
 
     .top{
@@ -151,11 +158,11 @@
     }
 
     .topText h1 {
+        font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 3px;
         color: #6f42c1;
         text-align: center;
-        background-size: 100%;
-        font-weight: bold;
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .sobre {
@@ -204,13 +211,11 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    /* background-color: white; */
     line-height: 1.5;
     border-bottom: 1px solid #C5CED5;
 }
 
 .estudos {
-    /* background-color: white; */
     padding: 20px;
     line-height: 1.5;
     border-bottom: 1px solid #C5CED5;
@@ -227,13 +232,8 @@
     text-decoration-style: groove;
 }
 
-.outros {
-    /* background-color: white; */
-    line-height: 1.5;
-}
-
+.outros,
 .redes {
-    /* background-color: white; */
     line-height: 1.5;
 }
 
@@ -248,31 +248,31 @@
     border-radius: 90%;
     background: black;
     color: white;
-    transition: background 0.5s;
+    transition: background-color 0.5s;
 }
 
 .fa-facebook:hover {
-    background: #3b5998;
+    background-color: #3b5998;
 }
 
 .fa-twitter:hover {
-    background: #55ACEE;
+    background-color: #55ACEE;
 }
 
 .fa-instagram:hover {
-    background: #c13584;
+    background-color: #c13584;
 }
 
 .fa-telegram:hover {
-    background: #0088cc;
+    background-color: #0088cc;
 }
 
 .fa-whatsapp:hover {
-    background: #25d366;
+    background-color: #25d366;
 }
 
 .fa-github:hover{
-    background: #6f42c1;
+    background-color: #6f42c1;
 }
 
 .gradient {
